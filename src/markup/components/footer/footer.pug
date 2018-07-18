@@ -1,3 +1,23 @@
+include  ../main-nav/main-nav
 mixin footer(data)
     +b.FOOTER.footer()&attributes(attributes)
-        block
+        +b.ftop.__ftop
+            .container
+                +e.H1.title Нам доверяют
+                +b.NAV.partners.__partners
+                    +e.A.link(href="#")
+                        +e.IMG(src="%=static=%img/content/diksi.png")
+                    +e.A.link(href="#")
+                        +e.IMG(src="%=static=%img/content/fgup.png")
+                    +e.A.link(href="#")
+                        +e.IMG(src="%=static=%img/content/rwm.png")
+                    +e.A.link(href="#")
+                        +e.IMG(src="%=static=%img/content/vekastroy.png")
+        +b.fbottom.__fbottom
+            .container
+                +main-nav(itemsList)
+                +b.last-container.__last-container
+                    +e.SPAN.cooperativ Все права защищены © vash-sayt.domen 2008 - 2015 г.
+                    +e.logo-container
+                        +e.IMG.my-logo(src="%=static=%img/content/myLogo.png")
+                        +e.SPAN.description Создание и раскрутка сайта

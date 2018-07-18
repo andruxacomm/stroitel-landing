@@ -1,0 +1,256 @@
+.hero {
+    margin-top: 45px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 84px;
+    }
+
+    &__left-menu {
+        display: block;
+        width: 255px;;
+        margin-right: 25px;
+
+        @include below(508px){
+            width: 150px;
+            margin-right: 5px;
+        }
+    }
+
+
+}
+
+.left-menu {
+    &__sub-list {
+        display: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+
+        border: 1px solid #669900;
+        cursor: pointer;
+        list-style: none;
+    }
+
+    &__sub-list-item {
+        margin-bottom: 5px;
+
+        color: #999933;
+
+        cursor: pointer;
+        list-style: url("%=static=%content/default-angle.png");
+
+            a {
+                font-family: $OpenSansSemiBold;
+                font-size: 13px;
+                color: #999933;
+                text-decoration: none;
+            }
+        &:hover {
+            cursor: pointer;
+            list-style: url("%=static=%content/hover-angle.png");
+             a {
+                 border-bottom: 1px solid #999933;
+                 cursor: pointer;
+
+             }
+        }
+
+    }
+
+
+    &__header-title {
+        display: block;
+        height: 55px;
+
+        font-family: $OpenSans;
+        font-size: 16px;
+        line-height: 3.714;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+
+        background: #000;
+        cursor: default;
+
+        @include below(508px){
+            font-size: 12px;
+        }
+    }
+
+
+
+    li:first-child{
+        list-style-type: none;
+    }
+
+    &__sub-item {
+        list-style-type: none;
+
+        .item-header {
+            position: relative;
+
+            min-height: 50px;
+            padding-top: 17px;
+            padding-right: 35px;
+            padding-bottom: 17px;
+            padding-left: 15px;
+
+            font-family: $OpenSansSemiBold;
+            font-size: 13px;
+            line-height: 1.2;
+            color: #ffffff;
+            text-align: left;
+            text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+
+            background: url("%=static=%content/li-bg.png") no-repeat center;
+            background-size: cover;
+            cursor: pointer;
+
+            @include below(508px){
+                font-size: 10px;
+            }
+
+            &:before {
+                content: '';
+
+                position: absolute;
+                top: 43%;
+                right: 10px;
+
+                display: block;
+                display: none;
+                width: 15px;
+                height: 15px;
+
+                background: url("%=static=%content/arrow-bottom.png") no-repeat center;
+            }
+
+            &:after {
+                content: '';
+
+                position: absolute;
+                top: 43%;
+                right: 10px;
+
+                display: block;
+                width: 15px;
+                height: 15px;
+
+                background: url("%=static=%content/arrow-right.png") no-repeat center;
+            }
+        }
+
+        .item-header.drop-down {
+
+            &:before {
+                display: block;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+
+    }
+}
+
+.main-body {
+    &__title {
+        padding-bottom: 18px;
+
+        font-family: $OpenSansSemiBold;
+        font-size: 36px;
+        line-height: 1.2;
+        color: #666633;
+        text-align: left;
+
+        border-bottom: 1px solid #666633;
+
+        @include below(768px){
+            font-size: 16px;
+        }
+    }
+
+    &__path {
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
+
+    &__link {
+        margin-right: 5px;
+        margin-left: 5px;
+
+        font-family: $OpenSans;
+        font-size: 13px;
+
+        color: #000;
+        text-decoration: none;
+
+        @include below(768px){
+            font-size: 10px;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__link.active-green {
+        color: #669900;
+        text-decoration: underline;
+    }
+
+    &__text {
+        font-family: $OpenSans;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #999999;
+
+        @include below(768px){
+            font-size: 10px;
+        }
+    }
+
+
+    &__list {
+        display: block;
+        padding-top: 0;
+        padding-bottom: 20px;
+        padding-left: 34px;
+
+    }
+
+    &__list-item {
+        margin-top: 7.5px;
+        margin-bottom: 7.5px;
+
+        font-family: $OpenSansSemiBold;
+        font-size: 15px;
+
+        list-style: url("%=static=%content/stronghold.png");
+        list-style-position: outside;
+
+        @include below(768px){
+            font-size: 10px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 25px;
+
+        font-family: $OpenSansBold;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.167;
+        color: #666633;
+
+        @include below(768px){
+            font-size: 12px;
+        }
+    }
+
+
+
+}
+

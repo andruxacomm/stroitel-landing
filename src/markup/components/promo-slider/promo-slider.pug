@@ -1,0 +1,13 @@
+mixin promo-slider(data)
+    .container
+        +b.promo-slider()&attributes(attributes)
+            +e.swiper-container.swiper-container
+                +e.swiper-wrapper.swiper-wrapper
+                    +e.IMG.swiper-slide.swiper-slide.slide-img(src="%=static=%img/content/slide.png")
+                    +e.IMG.swiper-slide.swiper-slide.slide-img(src="%=static=%img/content/slide.png")
+                    +e.IMG.swiper-slide.swiper-slide.slide-img(src="%=static=%img/content/slide.png")
+                    +e.IMG.swiper-slide.swiper-slide.slide-img(src="%=static=%img/content/slide.png")
+                    +e.IMG.swiper-slide.swiper-slide.slide-img(src="%=static=%img/content/slide.png")
+                +e.swiper-button-prev
+                +e.swiper-button-next
+            +e.swiper-pagination.swiper-pagination

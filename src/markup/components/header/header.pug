@@ -1,3 +1,27 @@
+include ../main-nav/main-nav
 mixin header(data)
     +b.HEADER.header()&attributes(attributes)
-        block
+        .container
+            +b.top.__top
+                +e.IMG.logo(src="%=static=%img/content/Logo.png")
+                +e.title-container
+                    +e.H1.title Доступный, комплексный ремонт
+                    +e.H1.subtitle в кредит
+                    +e.SPAN.organisation ООО "Контур"
+                +e.numbers
+                    +e.first-line
+                        +e.IMG.phone-logo(src="%=static=%img/content/phone.png")
+                        +e.SPAN.prefix-number 8(3532)
+                        +e.SPAN.line-number 58-77-99
+                    +e.other-line
+                        +e.SPAN.line-number 96-75-36
+                    +e.other-line
+                        +e.SPAN.line-number 23-89-47
+                    +e.last-line
+                        +e.IMG.mail-logo(src="%=static=%img/content/mail.png")
+                        +e.SPAN.contacts oren-contur@mail.ru
+        +b.bottom.__bottom
+            .container
+                BUTTON.main-nav__menu-trigger Меню
+                +main-nav(itemsList)
+

@@ -1,0 +1,8 @@
+extends ../layouts/default
+include ../components/galery/galery
+
+block vars
+    -pageSettings.title = 'Главная';
+
+block content
+    +galery()

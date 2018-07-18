@@ -7,3 +7,14 @@
 // Var for using custom font
 $font-1: 'Open Sans', Helvetica, Arial, sans-serif;
 */
+@include font-face('Open Sans', '../fonts/OpenSans-Regular', normal, italic, $exts: woff2 eot);
+$OpenSans: 'Open Sans', Helvetica, Arial, sans-serif;
+
+@include font-face('Open Sans bold', '../fonts/OpenSans-Bold', normal, italic, $exts: ttf svg);
+$OpenSansBold: 'Open Sans bold', Helvetica, Arial, sans-serif;
+
+
+@include font-face('Open Sans Semibold', '../fonts/OpenSans-Semibold', normal, italic, $exts: woff2 eot svg);
+$OpenSansSemiBold: 'Open Sans Semibold', Helvetica, Arial, sans-serif;
+
+

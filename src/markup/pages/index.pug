@@ -1,7 +1,13 @@
 extends ../layouts/default
+include ../components/hero/hero
+include ../components/promo-slider/promo-slider
+include ../components/popup/popup
 
 block vars
     -pageSettings.title = 'Главная';
 
 block content
     // Контент здесь
+    +promo-slider()
+    +hero()
+    +popup()

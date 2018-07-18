@@ -1,0 +1,7 @@
+include ./nav-item/nav-item
+
+
+mixin main-nav(data)
+    +b.UL.main-nav()&attributes(attributes)
+        each item in data.items
+            +nav-item(item)

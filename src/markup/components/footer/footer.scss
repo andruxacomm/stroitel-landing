@@ -1,3 +1,180 @@
 .footer {
+    &__ftop {
+        background: #fff;
+    }
+    &__fbottom {
+        background: url("%=static=%/content/header.png");
+        background-size: cover;
+    }
+
+
+    &__fbottom {
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+
+            &__nav-item {
+                width: 180px;
+                padding-top: 17px;
+                margin-right: 1px;
+                margin-left: 1px;
+
+                font-family: $OpenSansBold;
+                font-size: 13px;
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                border-bottom: 1px solid #fff;
+                &:hover {
+                    background: url("%=static=%content/link-hover.png");
+                }
+            }
+        }
+
+
+    }
 
 }
+
+.ftop {
+    &__title {
+        position: relative;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: -5px;
+
+        font-family: $OpenSansSemiBold;
+        font-size: 39px;
+        color: #666633;
+        text-align: center;
+
+        @include below(768px){
+            font-size: 20px;
+        }
+
+        &:before {
+            content: '';
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+            width: 35%;
+            height: 1px;
+
+            background: #666633;
+
+            @include below(768px){
+                display: none;
+            }
+        }
+
+        &:after {
+            content: '';
+
+            position: absolute;
+            top: 50%;
+            right: 0;
+
+            width: 35%;
+            height: 1px;
+
+            background: #666633;
+
+            @include below(768px){
+                display: none;
+            }
+        }
+    }
+    &__partners {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+.fbottom .container  .main-nav {
+    @include below(1064px){
+        display: none !important;
+    }
+}
+.fbottom {
+    &__last-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 30px;
+
+        @include below(768px){
+            justify-content: space-around;
+        }
+    }
+
+
+}
+
+.last-container {
+    &__logo-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__my-logo {
+        height: 48px;
+
+    }
+
+    &__cooperativ {
+        margin-top: 50px;
+
+        font-family: $OpenSans;
+        font-size: 12px;
+        color: #cccc99;
+
+        @include below(768px){
+            margin-top: 33px;
+
+            font-size: 10px;
+        }
+
+
+        @include below(425px){
+            margin-top: 33px;
+
+            font-size: 8px;
+        }
+    }
+
+    &__description {
+        font-family: $OpenSansBold;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+
+        border-bottom: 1px solid #cc9999;
+
+        @include below(425px){
+            font-size: 8px;
+
+            border-bottom: 0;
+        }
+    }
+}
+
+.partners {
+    &__link {
+        margin-right: 55px;
+
+        @include below(768px){
+            margin-right: 0;
+        }
+    }
+
+}
+

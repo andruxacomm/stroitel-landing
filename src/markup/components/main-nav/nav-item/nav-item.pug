@@ -1,0 +1,7 @@
+mixin nav-item(data)
+    +e.LI.nav-item()&attributes(attributes)=data.name
+        +e.drop-down-list
+            +e.A.link-item(href="" id=data.subitemId)=data.subitem
+            +e.A.link-item(href="") Пункт меню 2
+            +e.A.link-item(href="") Пункт меню 3
+            +e.A.link-item(href="") Пункт меню 4
