@@ -2072,7 +2072,7 @@ button.swiper-pagination-bullet {
 }
 
 .main-nav__link-item:hover {
-  color: #fff;
+  color: #fff !important;
   background: #669900;
 }
 
