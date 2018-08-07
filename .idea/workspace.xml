@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3264c397-c946-472a-87bd-5fbb3eff6f7a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/markup/components/main-nav/nav-item/nav-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/markup/components/main-nav/nav-item/nav-item.scss" afterDir="false" />
-    </list>
+    <list default="true" id="3264c397-c946-472a-87bd-5fbb3eff6f7a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/markup/components/main-nav/nav-item/nav-item.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="61" column="35" lean-forward="true" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -208,11 +205,6 @@
             <path>
               <item name="remont" type="b2602c69:ProjectViewProjectNode" />
               <item name="remont" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="remont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="remont" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -286,16 +278,15 @@
       <workItem from="1533020113564" duration="510000" />
       <workItem from="1533366412617" duration="11000" />
       <workItem from="1533366440036" duration="1716000" />
-      <workItem from="1533639191941" duration="300000" />
+      <workItem from="1533639191941" duration="561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81609000" />
+    <option name="totallyTimeSpent" value="81870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50378215" side_tool="true" weight="0.21452145" />
@@ -657,7 +648,7 @@
     <entry file="file://$PROJECT_DIR$/src/markup/components/main-nav/nav-item/nav-item.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="61" column="35" lean-forward="true" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
         </state>
       </provider>
     </entry>
